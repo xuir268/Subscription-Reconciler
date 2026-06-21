@@ -8,4 +8,4 @@ sources: []
 # Overview
 
 The evolving top-level synthesis of this wiki. Empty until the first source is
-ingested — see [[../CLAUDE.md|CLAUDE.md]] for the ingest workflow.
+ingested — see [[CLAUDE]] for the ingest workflow.
