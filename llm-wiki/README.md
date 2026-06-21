@@ -8,6 +8,18 @@ schema, page conventions, and ingest/query/lint workflows the agent follows.
 Open the `llm-wiki/` folder itself as the vault root — not the repo root —
 so Obsidian's graph view and backlinks only cover wiki content, not Go source.
 
+**On the Mac:**
+
+1. Clone the repo normally in Terminal: `git clone <repo-url>`.
+2. In Obsidian, **Open another vault → Open folder as vault**, and pick the
+   `llm-wiki` folder inside the clone.
+3. Syncing is just git — `git pull` to pick up agent commits, `git add / commit
+   / push` for your own edits. No plugin required, though **Obsidian Git** is
+   still handy if you want pull/push buttons inside the app instead of
+   switching to Terminal.
+4. Web Clipper works natively here (it's a desktop browser extension) — use it
+   to drop articles straight into `raw/`.
+
 **On the iPad:**
 
 1. Get this repo onto the iPad's local filesystem. Obsidian doesn't speak git
@@ -24,6 +36,10 @@ so Obsidian's graph view and backlinks only cover wiki content, not Go source.
    iOS, but Obsidian supports the **system share sheet** — share a page/article
    from Safari directly into Obsidian, or into `raw/` via the Files app, then
    tell the agent to ingest it.
+
+If you use both devices against the same vault, treat git as the source of
+truth — pull before you start editing on either one to avoid merge conflicts
+in the markdown files.
 
 ## Using Obsidian effectively here
 
